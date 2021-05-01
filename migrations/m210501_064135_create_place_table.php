@@ -13,7 +13,13 @@ class m210501_064135_create_place_table extends Migration
     public function safeUp()
     {
         $this->createTable('{{%place}}', [
-            'id' => $this->primaryKey(),
+            'id' => $this->primaryKey()->unsigned(),
+            'place_id' => $this->string(45)->notNull(),
+            'lat' => $this->string(45)->notNull(),
+            'lng' => $this->string(45)->notNull(),
+            'country_code' => $this->string(2)->notNull(),
+            'is_country' => $this->boalean(),
+
         ]);
     }
 
