@@ -99,6 +99,7 @@
                 "lib-pcre": "*",
                 "php": ">=5.4.0"
             },
+
             "require-dev": {
                 "cebe/indent": "*",
                 "facebook/xhprof": "*@dev",
