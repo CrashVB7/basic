@@ -18,7 +18,7 @@ class m210501_064135_create_place_table extends Migration
             'lat' => $this->string(45)->notNull(),
             'lng' => $this->string(45)->notNull(),
             'country_code' => $this->string(2)->notNull(),
-            'is_country' => $this->boalean(),
+            'is_country' => $this->boolean(),
 
         ]);
     }
