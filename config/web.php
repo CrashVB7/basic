@@ -48,6 +48,16 @@ $config = [
                 ],
             ],
         ],
+        'view' => [
+            'theme' => [
+                'basePath' => '@app/themes/agency',
+                'baseUrl' => '@web/themes/agency',
+                'pathMap' => [
+                    '@app/views' => '@app/themes/agency',
+                ],
+            ],
+        ],
+
         'db' => $db,
 
         'urlManager' => [
